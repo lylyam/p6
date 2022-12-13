@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_Galeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        :root{--granate:#400101;
+            --rojo: #A62F03;
+            --naranja:#F27405;
+            --azul-bg:#C2D7F2;
+            --rosa-bg:#F2B29B;
+            --titulo-obra: 'Abril Fatface', cursive;
+            --autor-fecha: 'PT Serif', serif;}
+        
+        img{width: 100%;}
+        h1{font-family: var(var(--titulo-obra));
+            color: var(--rojo);
+            font-size: 1.5em} 
+        h2,p{font-family: var(--autor-fecha);}
+        h2{color: var(--naranja);
+                font-weight: 700;
+                font-size: 1em}
+        p{color: black;
+            font-weight: 400;
+            font-size: 0.7em;}
+        .galeria{display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            padding: 2em;}
+        .card{transition: flex-grow 0.5s;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            border: 0.3em solid var(--azul-bg);
+            background-color: var(--azul-bg);
+            flex-basis: 23%;}
+        .card:nth-child(4){flex-grow: 1;}
+        .card:nth-child(2){
+            flex-grow: 1;}
+        .card_img{width: 100%;
+            height: 350px;}
+        .card_img img{object-fit: cover;
+            height: 100%;}
+        .card:hover{box-shadow: 0.1em 0.1em 0.5em var(--granate);
+            flex-grow: 1;}
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="galeria">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Abadia_en_el_bosque_Caspar_David_friedrich.png" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Abadía en el bosque</h1>
+                    <h2>Caspar David Friedrich</h2>                                                            
+                    <h2>Alemania, 1809</h2>    
+                    <h2>Museo: Alte Nationalgalerie, Berlín (Alemania)</h2>                                            
+                    <h2>Técnica: Óleo (110,4 cm x 171 cm.)</h2> 
+                    <p>Hablar de la muerte nunca ha sido fácil, es por ello que el manejo de la misma es tan diferente en cada persona; algunos prefieren ignorarla, otros hablarla y en el caso de Caspar David Friedrich, pintarla.
+                        Abadía en un bosque, también conocida como Abadía en el robledal, es una de las primeras obras del pintor donde se logra apreciar la corriente romántica. La elección de temáticas como la desolación, la soledad y melancolía se llevan de la mano con la naturaleza y el paso de las estaciones.
+                        Esta obra retrata las ruinas de una abadía gótica donde una comitiva de monjes portan un ataúd; como se vería en el resto de sus pinturas, Caspar David Friederich no marca un límite de espacio, siendo este difumiado con niebla y la extensión del mismo paisaje.
+                        A primera instancia podría parecer una obra que no retrata mas que el dolor tras una pérdida, sin embargo, la luz de la zona superior se vuelve el elemento protagónico y nos recuerda que hay algo que le gana a todo mal terrenal: la fe.
+                        Con el paisaje bañado por una intensa luminosidad, Friederich retrata el reino de los cielos y la promesa de un Más Allá. El hombre no puede hacer nada más que contemplar la magnitud de la naturaleza y confiar en esa promesa.
+                        El paisaje logra retratar una situación tan real y simbólica a la vez que se convierte en un paisaje tan único como cada uno de nosotros puede sentir las cosas.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Barco_de_esclavos_William_Turner.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Barco de esclavos</h1>
+                    <h2>William Turner</h2>                                                                           
+                    <h2>Reino Unido, 1840</h2>                                           
+                    <h2>Museo: Museum of Fine Arts, Boston (Estados Unidos)</h2>                  
+                    <h2>Técnica: Óleo (90.8 × 122.6 cm.)</h2>
+                    <p>En 1781, 142 esclavos africanos fueron asesinados a manos de la tripulación del barco negrero Zong, que se dirigía a Jamaica. Al parecer, cuando el barco comenzó a quedarse sin agua, los esclavistas arrojaron a algunos de los esclavos al mar (mujeres y niños primero). Al llegar a tierra tuvieron que rendir cuentas ante la aseguradora por «perder la mercancía».
+                        Todo esto horrorizó a buena parte de la opinión pública británica y a la larga desencadenaría en el movimiento abolicionista, acabando definitivamente con la esclavitud en Gran Bretaña en 1833 (en USA en 1863, en España en 1880…).
+                        Turner quiso aportar su grano de arena al movimiento con este cuadro, para remover un par de conciencias, pero además de la denuncia, aprovechó para pintar uno de sus grandes paisajes embravecidos, que para eso era un romántico.
+                        El pintor de los elementos desatados del clima muestra la atrocidad en mitad de la tempestad con apenas unos grilletes y unas manos que luchan por no hundirse, y un mar salvaje (gaviotas y peces no son menos crueles que la tripulación) del que intenta alejarse el tristemente célebre barco de esclavos.
+                        Arriba, podemos ver la luz de Turner, una luz en la que se parecen mezclar todos los colores, adelantándose a corrientes artísticas muy posteriores.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/El_soldado_y_la_muerte_Hnas_Larwin.png" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>El soldado y la muerte</h1>
+                    <h2>Hans Larwin</h2>                                              
+                    <h2>Austria, 1917</h2>                                                             
+                    <h2>Museo:Heeresgeschichtliches Museum, Viena (Austria)</h2>                     
+                    <h2>Técnica:Óleo (38 x 37,7 cm.)</h2>
+                    <p>El del soldado y la Muerte es un tema muy antiguo en el arte alemán. Artistas como Durero ya lo había tratado, pero aquí Hans Larwin (que no era alemán, pero sí austríaco) lo lleva un poco más allá actualizándolo a su época y ambientándolo en la I Guerra Mundial.
+                        Más de 70 millones de personas de 30 países lucharon en la Primera Guerra Mundial. En total, unos 10 millones de soldados perdieron sus vidas en la carnicería, ya fuera en inmundas trincheras, o por tuberculosis, infecciones o la mortal Gripe Española. A esto hay que sumarle otros 7 millones de civiles. Los historiadores más pesimistas calculan que entre una cosa y otra, La I Guerra Mundial acabó con 65 millones de vidas.
+                        Desde luego en ese conflicto no le faltó trabajo a nuestra huesuda amiga.
+                        Larwin participó en la contienda y fue pintor de guerra oficial para el Imperio Austro-Húngaro. El artista pudo ver de cerca la muerte en varias ocasiones. Por suerte, la Parca nunca lo eligió a él durante el conflicto, aunque Larwin la tuvo siempre presente en su obra desde entonces.
+                        Es el caso de esta obra, que ilustra perfectamente el día a día de un soldado. El militar apunta con su rifle al enemigo, aunque el verdadero enemigo está a su lado, sonriente y abrazándolo con su fría y esquelética mano.
+                        En el futuro, la Muerte volvería a trabajar a destajo en la II Guerra Mundial, batiendo nuevos récords. A estas horas, ni ella misma debe querer saber nada de una 3ª, aunque aquí está el ser humano, siempre superándose a sí mismo.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Painting_1946_Francis_Bacon.png" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Painting</h1>
+                    <h2>Francis Bacon</h2> 
+                    <h2>Irlanda, 1946</h2>
+                    <h2>Museo:MoMA, Nueva York (Estados Unidos)</h2>                          
+                    <h2>Técnica: Óleo (198.1 x 132.1 cm.)</h2>
+                    <p>Creado en el período inmediatamente posterior a la Segunda Guerra Mundial, Bacon nos da otra muestra de su extraordinario talento con esta obra. No por nada era la figura principal de la Escuela neofigurativa de Londres.
+                        “Painting” muestra el retrato de una figura pública en el anonimato. El paraguas y el traje aluden al primer ministro británico antes de la guerra, Neville Chamberlain, que siempre llevaba estos elementos.
+                        Pero esa cara de cadáver en descomposición y la mueca enseñando los dientes sugieren una profunda brutalidad por debajo de un uniforme respetable.
+                        El expresionismo de Bacon siempre mostró estos seres monstruosos aislados, solos y desfigurados, pero que para el artista eran absolutamente reales. Personas en sufrimiento, siempre en interiores como este, donde el retratado convive con trozos de carne descomponiéndose.
+                        Los cadáveres de vaca en suspensión como crucificados, son otro motivo recurrente del artista que por lo visto vienen de su fascinación infantil con las carnicerías, y que aquí creemos que pudo inspirarse quizás en el Buey Desollado de Rembrandt.
+                        Si recordáis, en el “Batman” de Tim Burton, el Joker y sus compiches entran en un museo de Gotham para destrozar obras de arte, pero el villano decide salvar una obra: “Esta me gusta…”. Por supuesto era una de Francis Bacon.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Estudio_de_marina_con_nubes_de_lluvia_John_Constable.png" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Estudio de marina con nube de lluvia</h1>
+                    <h2>John Constable</h2>                                        
+                    <h2>Reino unido, 1827</h2>                                                                                                        
+                    <h2> Museo:Royal Academy of Arts, Londres (Reino Unido)</h2>                                                   
+                    <h2>Técnica: Óleo (22.2 × 31.1 cm.)</h2>
+                    <p>Pocas cosas más abstractas hay dentro de la figuración que pintar nubes.
+                        Y el pintor de nubes por excelencia fue el inglés John Constable que junto al otro gran pintor romántico, Turner, renovarían el paisajismo al intentar representar de forma precisa cielos cambiantes, meteorologías y matices que sólo se pueden percibir pintando «au plein air».
+                        Son los de ambos pintores unos paisajes emocionales, personales, sublimes y pintorescos, hechos al modo romántico.
+                        El protagonista de los cuadros de Mr. Constable es el cielo. De hecho, una técnica inventada por él era el «skying» (recorrer el cielo). Pintaba muy rápido, para capturar el momento a modo de cámara fotográfica (artilugio que apenas había nacido cuando vivió el pintor), y sin duda se adelantó a movimientos artísticos posteriores como el Impresionismo o el arte abstracto.
+                        Aquí la abstracción llega casi a los límites del expresionismo. Constable consigue un efecto dramático con esos negros y amenazantes nubarrones ocupando la mayor parte del lienzo, situados sobre unas figuras de barquitos casi indistinguibles. Las pinceladas son rápidas y muy empastadas, llegando a aplicar el color con espátula en ciertas zonas.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/Retrato_nocturno_Lucian_Freud.png" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Retrato nocturno</h1>
+                    <h2>Lucian Freud</h2>
+                    <h2>Reino unido, 1986</h2>
+                    <h2>Colección particular</h2>                                                                              
+                    <h2>Técnica: Óleo (92.7 x 76.2 cm.)</h2>
+                    <p>Uno de los magníficos desnudos de Freud (nieto del psicoanalista), uno de los estandartes de la Nueva Figuración Británica junto a Bacon y Auerbach.
+                        Freud pinta a familiares y amigos desnudos y vulnerables. El artista prescinde de comunicar sentimientos: busca sobre todo la carnalidad.
+                        Como sus colegas de la Escuela de Londres, el pintor consideraba al ser humano poco más que un montón de carne, que en pintura se traduce como un montón de materia, casi una escultura.
+                        Los desnudos de Freud son perturbadores. Dejando de lado sus poses exageradas, los defectos y las imperfecciones del retratado son más que visibles. Es casi hiperrealismo, aunque el artista deja claro que lo que hace es pintura.
+                        Además el pintor usa un punto de vista alto, colocando al espectador de alguna manera en una posición de superioridad, entre el voyeur y la imagen reflejada en el espejo. Después de todo, Freud pinta humanos, que es lo que somos… algunos.
+                    </p>
+                </header>
+            </div>
+    </div>
+    </main>
+</body>
+</html>
